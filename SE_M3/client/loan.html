@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Page</title>
+  <link rel="stylesheet" href="creditcard.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src ="../pics/circlelogo.png" alt = "logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="client.html">Home</a></li>
+                <li><a href="client.html">Back</a></li>
+                <!-- <li><a href="#">Forward</a></li> -->
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        <a class ="cta" href="../index.html"><button>Log out</button></a>
+    </header>
+    <P id="users"></P>
+    <div class="accountform">
+        <form action="./acknowledgement.html" method="get" class="form loan-form flex flex-column" autocomplete="off">
+            <h3> Apply for a Loan</h3> 
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email ID</label>
+            <input type="email" name="email" id="email">
+            <label for="mobile">Mobile No.</label>
+            <input type="text" name="mobile" id="mobile">
+            <label for="city">City of Current Residence</label>
+            <input type="text" name="city" id="city">
+            <label for="employment">Type of Employment</label>
+            <input type="text" name="employment" id="employment">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <label for="residence">Residence type</label>
+            <input type="text" name="residence" id="residence">
+            <label for="income">Monthly Net Income</label>
+            <input type="text" name="income" id="income">
+            <label for="obligations">Monthly Obligations</label>
+            <input type="text" name="obligations" id="obligations">
+            <label for="loan">Loan Amount required</label>
+            <input type="text" name="loan" id="loan">
+            <button type="submit">Submit</button>
+        </form>
+</div>
+</body>
+<script src="client.js" charset="utf-8"></script>
+</html>
