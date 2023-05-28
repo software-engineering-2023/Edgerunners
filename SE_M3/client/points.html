@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Page</title>
+  <link rel="stylesheet" href="points.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src ="../pics/circlelogo.png" alt = "logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="client.html">Home</a></li>
+                <li><a href="client.html">Back</a></li>
+                <!-- <li><a href="#">Forward</a></li> -->
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        <a class ="cta" href="../index.html"><button>Log out</button></a>
+    </header>
+    <P id="users"></P>
+    <div class="accountform">
+    <form class="form loan-form flex flex-column" autocomplete="off">
+        <h3> Redeem Points</h3> 
+        <label for="name">Points Available: 7824</label>
+        <label for="redeem">Cashback: 7824 ->  $387</label>       
+        <button type="button" onclick="requestalert()">Redeem points</button>
+    </form>
+</div>
+<script src="points.js" charset="utf-8"></script>
+</body>
+</html>
