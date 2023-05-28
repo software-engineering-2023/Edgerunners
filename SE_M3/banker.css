@@ -68,6 +68,9 @@ a:active { text-decoration: none; }
     border-radius: 6px;
     color: #ffffff;
     background: #bf1b1b;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
 }
@@ -81,6 +84,9 @@ a:active { text-decoration: none; }
     -moz-border-radius: 6;
     border-radius: 6px;
     color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
     background: #46b798;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
