@@ -55,14 +55,14 @@ header{
 }
 button{
     padding: 9px 25px;
-    background-color: rgba(129, 181, 218, 1);
+    background-color: rgb(77, 123, 156);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 button:hover{
-    background-color: rgba(129, 181, 218, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .box-container {
     display: flex;
@@ -87,4 +87,62 @@ button:hover{
     font-size: 16px;
     font-weight: bold;
     color: #fff;
+}
+.label {
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    font-family: Arial;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .bankers {background-color: #046CB5;}
+.b{
+    background-color: #f6f5f7;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 330px;
+	max-width: 100%;
+    min-height: 400px;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+input {
+	background-color: #D9D9D9;
+	border: none;
+  	color: #000000;
+	padding: 12px 15px;
+	margin: 20px;
+	width: 90%;
+}
+#pid{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+.button2{
+    padding: 9px 25px;
+    background-color: rgb(77, 123, 156);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button2:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.shot{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }

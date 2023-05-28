@@ -7,15 +7,81 @@
 </head>
 <body>
     <header>
-        <img class="logo" src ="pics/circlelogo.png" alt = "logo">
+        <a href="#"><img class="logo" src ="pics/circlelogo.png" alt = "logo"></a>
         <nav>
             <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Back</a></li>
-                <li><a href="#">Profile</a></li>
+                <li><a href="admin.html">Home</a></li>
+                <li><a href="index.html">Back</a></li>
             </ul>
         </nav>
         <a class ="cta" href="index.html"><button>Log out</button></a>
     </header>
+    <div class="b">
+        <span class="label bankers">Bankers</span>
+        <br>
+        <br>
+        <p id="pid"></p>
+        <input class="input" type="text" id="username" placeholder="username" />
+        <input class="input" type="text" id="pass" placeholder="password" /> 
+        <div class="shot">
+            <button class="button2" onclick="c()">add bankers</button>
+        <button class="button2" onclick="d()">delete bankers</button>
+        </div>
+    </div>
 </body>
+<script src="main.js"></script>
+<script>
+    var bankers = ""
+    for(var i = 0 ; i<banker.length ;++i){
+        bankers += (i+1)+") "+banker[i].username + "<br>"
+    }
+    document.getElementById("pid").innerHTML = bankers;
+    function c(){
+        const user = document.getElementById('username').value
+        const pass = document.getElementById('pass').value
+        if(user==""||pass==""){
+            alert("invalid shit")
+        }
+        else{
+            banker.push({username:user,password:pass})
+        }
+        var bankers = ""
+        for(var i = 0 ; i<banker.length ;++i){
+            bankers += (i+1)+") "+banker[i].username + "<br>"
+        }
+        document.getElementById("pid").innerHTML = bankers;
+    }
+    function d(){
+        const user = document.getElementById('username').value
+        const pass = document.getElementById('pass').value
+        let flag = false
+        if(user==""){
+            alert("invalid shit")
+        }
+        else{
+            flag = true
+        }
+        console.log(flag)
+        let del = -1
+        for(var j=0 ;j<banker.length;++j){
+            console.log(j+" "+del)
+            if(banker[j].username == user){
+                del = j;
+                console.log("found")
+                break;
+            }    
+        }
+        if(del!=-1){
+            banker.splice(del,1)
+        }
+        else{
+            alert("Banker not found")
+        }
+        var bankers = ""
+        for(var i = 0 ; i<banker.length ;++i){
+            bankers += (i+1)+") "+banker[i].username + "<br>"
+        }
+        document.getElementById("pid").innerHTML = bankers;
+    }
+</script>
 </html>
