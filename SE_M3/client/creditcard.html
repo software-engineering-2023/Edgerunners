@@ -20,7 +20,7 @@
     </header>
     <P id="users"></P>
     <div class="accountform">
-    <form action="./acknowledgement.html" method="get" class="form loan-form flex flex-column" autocomplete="off">
+    <form class="form loan-form flex flex-column" autocomplete="off">
         <h3> Apply for credit card</h3> 
         <label for="name">Name</label>
         <input type="text" name="name" id="name">
@@ -32,9 +32,9 @@
         <input type="text" name="city" id="city">
         <label for="comments">Comments</label>
         <textarea name="comments" id="comments"></textarea>         
-        <button type="submit">Submit</button>
+        <button type="button" onclick="requestalert()">Submit</button>
     </form>
 </div>
+<script src="creditcard.js" charset="utf-8"></script>
 </body>
-<script src="client.js" charset="utf-8"></script>
 </html>
