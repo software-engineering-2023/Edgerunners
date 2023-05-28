@@ -36,7 +36,8 @@
 // });
 const admin = [{username:"admin",password:"admin"}]
 var client = [{username:"client",password:"client",NID:"0",Phone:"0",fullname:"client"}]
-var banker = [{username:"banker",password:"banker"}]
+
+var banker = [{username:"banker1",password:"banker1"},{username:"banker2",password:"banker2"},{username:"banker3",password:"banker3"}]
 
 const pages = {
     adminpage: 'admin.html',
