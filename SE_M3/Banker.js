@@ -80,12 +80,12 @@ function addAccounts(){
             var s3 = document.createElement('SPAN');
             s3.innerHTML = accounts[i][2];
             var b = document.createElement('BUTTON');
-            b.setAttribute("class", accounts[i][0]);
+            //b.setAttribute('onClick', 'change()');
+            b.setAttribute("id", accounts[i][0]);
             b.setAttribute("class", 'pending-btn');
             b.innerText = 'Pending';
             var b1 = document.createElement('BUTTON');
             b1.innerText = '>';
-            b1.setAttribute("class", accounts[i][0]);
             b1.setAttribute("class", 'click-btn');
             di.setAttribute("class", "content");
             di.appendChild(s1);
@@ -114,12 +114,12 @@ function addCreditCards(){
             var s4 = document.createElement('SPAN');
             s4.innerHTML = creditCards[i][3];
             var b = document.createElement('BUTTON');
-            b.setAttribute("class", creditCards[i][0]);
+            //b.setAttribute('onClick', 'change()');
+            b.setAttribute("id", creditCards[i][0]);
             b.setAttribute("class", 'pending-btn');
             b.innerText = 'Pending';
             var b1 = document.createElement('BUTTON');
             b1.innerText = '>';
-            b1.setAttribute("class", creditCards[i][0]);
             b1.setAttribute("class", 'click-btn');
             di.setAttribute("class", "content");
             di.appendChild(s1);
@@ -148,12 +148,12 @@ function addLoans(){
             var s4 = document.createElement('SPAN');
             s4.innerHTML = loans[i][3];
             var b = document.createElement('BUTTON');
-            b.setAttribute("class", loans[i][0]);
+            //b.setAttribute('onClick', 'change()');
+            b.setAttribute("id", loans[i][0]);
             b.setAttribute("class", 'pending-btn');
             b.innerText = 'Pending';
             var b1 = document.createElement('BUTTON');
             b1.innerText = '>';
-            b1.setAttribute("class", loans[i][0]);
             b1.setAttribute("class", 'click-btn');
             di.setAttribute("class", "content");
             di.appendChild(s1);
@@ -163,5 +163,30 @@ function addLoans(){
             di.appendChild(b1);
             d.append(di);
         }
+    }
+}
+
+document.addEventListener('click', (e) =>{
+    if(e.target.className == 'pending-btn' || e.target.className == 'rejected-btn' || e.target.className == 'accepted-btn'){
+        change(e);
+    }
+});
+
+function change(e){
+    if(e.target.className == 'pending-btn'){
+        var t = document.getElementById(e.target.id);
+        t.removeAttribute('class');
+        t.setAttribute("class", "accepted-btn");
+        t.innerHTML = 'Accepted';
+    }else if(e.target.className == 'accepted-btn'){
+        var t = document.getElementById(e.target.id);
+        t.removeAttribute('class');
+        t.setAttribute("class", "rejected-btn");
+        t.innerHTML = 'Rejected';
+    }else if(e.target.className == 'rejected-btn'){
+        var t = document.getElementById(e.target.id);
+        t.removeAttribute('class');
+        t.setAttribute("class", "pending-btn");
+        t.innerHTML = 'Pending';
     }
 }
