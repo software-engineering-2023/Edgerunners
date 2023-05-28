@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Styled Page</title>
-  <link rel="stylesheet" href="client.css">
+  <link rel="stylesheet" href="creditcard.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
 </head>
 <body>
@@ -19,6 +19,22 @@
         <a class ="cta" href="../index.html"><button>Log out</button></a>
     </header>
     <P id="users"></P>
+    <div class="accountform">
+    <form action="./acknowledgement.html" method="get" class="form loan-form flex flex-column" autocomplete="off">
+        <h3> Apply for credit card</h3> 
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email ID</label>
+        <input type="email" name="email" id="email">
+        <label for="mobile">Mobile No.</label>
+        <input type="text" name="mobile" id="mobile">
+        <label for="city">City of Current Residence</label>
+        <input type="text" name="city" id="city">
+        <label for="comments">Comments</label>
+        <textarea name="comments" id="comments"></textarea>         
+        <button type="submit">Submit</button>
+    </form>
+</div>
 </body>
 <script src="client.js" charset="utf-8"></script>
 </html>

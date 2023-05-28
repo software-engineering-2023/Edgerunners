@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Bank | Account Page</title>
+    <!-- Font style -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/stylesheets/style.css">
+</head>
+
+<body id="top">
+    <header>
+        <!-- *********** Header Logo ************-->
+        <div class="container-header nav-bar flex space-between">
+            <a href="home.html" class="logo">
+                <div class="inline-flex align-center">
+                    <i class="fas fa-coins coins"></i>
+                    <div class="logo-text">
+                        <strong class="bank-name">
+                            Currency Bank
+                        </strong>
+                        <h5 class="tag-line">Your growth is our growth</h5>
+                    </div>
+                </div>
+            </a>
+            <input type="checkbox" name="cb" id="toggle">
+            <label for="toggle" class="bars"><i class="fas fa-bars"></i></label>            
+            <label for="toggle" class="close"><i class="far fa-times-circle"></i></label>            
+            <!-- *********** Header Navigation ************-->
+            <nav class="nav-header flex">
+                <ul class="navigation flex align-center">
+                    <div class="btns">
+                    <li><a class="btn active" href="personal.html">Personal</a></li>
+                    <li><a class="btn" href="business.html">Business</a></li>
+                    <li><a class="btn" href="agriculture.html">Agriculture</a></li>
+                    <li><a class="btn" href="nri.html">NRI</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="form-main">
+        <!-- ********************* Insurance Form **********************-->
+        <form action="./acknowledgement.html" method="get" class="form loan-form flex flex-column" autocomplete="off">
+            <h3> Open an Account</h3> 
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email ID</label>
+            <input type="email" name="email" id="email">
+            <label for="mobile">Mobile No.</label>
+            <input type="text" name="mobile" id="mobile">
+            <label for="city">City of Current Residence</label>
+            <input type="text" name="city" id="city">
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments"></textarea>         
+            <button type="submit">Submit</button>
+        </form>
+    </main> 
+            <!-- ********************* Footer **********************-->
+    <footer class="padding">
+        <div class="grid-footer">
+        <!-- *********** Contact ************-->
+        <div class="contact">
+            <h1 class="heading-main">The Currency Bank Ltd</h1>
+            <address>
+                G-100, Sector-15, Noida, India
+            </address>
+            <div class="phone">Phone: 1111-000000</div>
+            <h5 class="follow-footer">Follow us to follow Growth</h5>
+            <ul class = "footer-social flex">
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <!-- *********** Utility ************-->
+        <div class="utility">
+            <h4 class="heading-footer"> Utility Links</h4>
+            <ul>
+                <li><a href="#">Buy NPS Online</a></li>
+                <li><a href="#">HR Portals</a></li>
+                <li><a href="#">Gift Card Portal</a></li>
+                <li><a href="#">Electricity Payment Gateway</a></li>
+                <li><a href="#">Online money transfer from US</a></li>
+                <li><a href="#">Online money transfer from Non-US countries</a></li>
+                <li><a href="#">Temple Donation</a></li>
+                <li><a href="#">RBI Kehta Hai</a></li>
+                <li><a href="#">Secure Banking Tips</a></li>
+                <li><a href="#">Awards</a></li>
+            </ul>
+        </div>
+        <!-- *********** Customer Services ************-->
+        <div class="customer-service">
+            <h4 class="heading-footer"> Customer Service</h4>
+            <ul>
+                <li><a href="#">Feedback/Complaint</a></li>
+                <li><a href="#">Door Step Banking Services</a></li>
+                <li><a href="#">Lock / Unlock of Internet Banking</a></li>
+                <li><a href="#">Debit Card Hotlisting</a></li>
+                <li><a href="#">Download Forms</a></li>
+                <li><a href="#">Download Apps</a></li>
+                <li><a href="#">Inoperative and Unclaimed Deposits</a></li>
+                <li><a href="#">Holiday List</a></li>
+                <li><a href="#">Update / Verify Aadhaar</a></li>
+                <li><a href="#">Customer Support</a></li>
+            </ul>
+        </div>
+        <!-- *********** Others ************-->
+        <div class="others">
+            <h4 class="heading-footer"> Others</h4>
+            <ul>
+                <li><a href="#">Property Under Auction</a></li>
+                <li><a href="#">Service Charges & Fees</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Newsroom</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Ways to Bank</a></li>
+                <li><a href="#">Recovery Service Providers</a></li>
+                <li><a href="#">Customer Advisory</a></li>
+                <li><a href="#">Contact Us</a></li> 
+                <li><a href="#">Calculators</a></li>
+        </div>
+        </ul>
+    </div>
+    <small class="copyright">
+        
+        &copy; 2021 The Currency Bank Limited. All Rights Reserved.
+    </small>
+    </footer>
+    </div>
+    <a href="#top">
+    <div class="top">
+        <div class="top-symbol"><i class="fas fa-arrow-up"></i></div>
+        <div class="top-text">TOP</div>
+    </div>
+</a>
+
+</body>
+
+</html>
