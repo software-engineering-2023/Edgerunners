@@ -37,6 +37,7 @@
 const admin = [{username:"admin",password:"admin"}]
 var client = [{username:"client",password:"client",NID:"0",Phone:"0",fullname:"client"}]
 var banker = [{username:"banker",password:"banker"}]
+
 const pages = {
     adminpage: 'admin.html',
     clientpage: 'client/client.html',

@@ -38,10 +38,17 @@
                 <form action="">
                         <div class="input-group mb-3">
                         <div class="input-group-append">
-                            <span class="input-group-text" id="basic-addon2">Balance : 5000 EGP</span>
+                            <span class="input-group-text" id="basic-addon2" style="font-size:30px;">Balance : <span id = "balance" class="input-group-text" style="font-size:30px; font-weight: bold;"></span>  EGP</span>
                         </div>
-                        
                     </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">Please Select The Transaction Type : </span>
+                    </div>
+                    <select class="custom-select">
+                        <option value="1">Internal</option>
+                        <option value="2">Domestic</option>
+                        <option value="3">International</option>
+                      </select>
                     <div class="input-group mb-3">
                         <input type="text" id="enterName" class="form-control" placeholder="Recipient's username"
                             aria-label="Recipient's username" aria-describedby="basic-addon2">
@@ -65,8 +72,8 @@
             <div class="modal-footer">
 
                 <a href = "client.html"><button type="button"id="send"  class="btn btn-secondary" data-dismiss="modal">Close</button></a>
-                <a href = "success.html"><button type="button" id= "send"  class="btn btn-success" data-dismiss="modal" >Send
-                    Money</button></a>
+                <button type="button" id= "send"  class="btn btn-success" data-dismiss="modal" onclick="sendMoney()" >Send
+                    Money</button>
             </div>
         </div>
     </div>
@@ -74,6 +81,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
     <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
-    <script src="tranferMoney.js" charset="utf-8"></script>
+    <script src="transferMoney.js" charset="utf-8"></script>
 </body>
 </html
