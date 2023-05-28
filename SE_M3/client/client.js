@@ -1,0 +1,1 @@
+document.getElementById("user").innerHTML = JSON.stringify(client);

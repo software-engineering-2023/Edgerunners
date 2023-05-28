@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "consolidate": "^0.16.0",
+    "css": "^3.0.0",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "html": "^1.0.0",
+    "mustache": "^4.2.0",
+    "node.js": "^0.0.1-security"
+  },
+  "name": "se_m3",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
