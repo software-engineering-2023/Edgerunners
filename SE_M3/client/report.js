@@ -4,7 +4,7 @@ function requestalert(){
     if(comments == ""){
  alert("Please enter your issue.")
 }else{
-    alert("Your comments have been received by and admin and the issue will be solved as soon as possible.")
+    alert("Your comments have been received by an admin and the issue will be solved as soon as possible.")
 
 }
 }
@@ -15,7 +15,7 @@ function requestalert2(){
         alert("Please choose your problem")
     }
     else{
-        alert("Your comments have been received by and admin and the issue will be solved as soon as possible.")
+        alert("Your comments have been received by an admin and the issue will be solved as soon as possible.")
     }
 }
 
