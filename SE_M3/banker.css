@@ -28,7 +28,9 @@ a:hover { text-decoration: none; }
 
 
 a:active { text-decoration: none; }
-
+#bar2:hover{
+  background-color: rgba(129, 181, 218, 0.8);
+}
 
 .navbar{
     padding: 1% 4%;
