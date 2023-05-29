@@ -125,6 +125,7 @@ function addCreditCards(){
             di.appendChild(s1);
             di.appendChild(s2);
             di.appendChild(s3);
+            di.appendChild(s4);
             di.appendChild(b);
             di.appendChild(b1);
             d.append(di);
@@ -159,6 +160,7 @@ function addLoans(){
             di.appendChild(s1);
             di.appendChild(s2);
             di.appendChild(s3);
+            di.appendChild(s4);
             di.appendChild(b);
             di.appendChild(b1);
             d.append(di);
