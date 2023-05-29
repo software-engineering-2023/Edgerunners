@@ -53,7 +53,7 @@
         const user = document.getElementById('username').value
         const pass = document.getElementById('pass').value
         if(user==""||pass==""){
-            alert("invalid shit")
+            alert("invalid inputs!")
         }
         else{
             flag = true;
@@ -79,7 +79,7 @@
         const pass = document.getElementById('pass').value
         let flag = false
         if(user==""){
-            alert("invalid shit")
+            alert("invalid inputs!")
             return
         }
         else{
@@ -106,7 +106,7 @@
             bankers += (i+1)+") "+banker[i].username + "<br>"
         }
         if(bankers==""){
-            bankers = "damn we have no bankers"
+            bankers = "well we have no bankers"
         }
         document.getElementById("pid").innerHTML = bankers;
     }
