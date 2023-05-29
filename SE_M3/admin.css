@@ -141,8 +141,93 @@ input {
 .button2:hover{
     background-color: rgba(0, 0, 0, 0.8);
 }
+.button3{
+    padding: 9px 25px;
+    background-color: rgb(77, 123, 156);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button3:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
 .shot{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
+#container{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5%;
+  }
+
+  span{
+    color: #ffffff;
+    background-color: rgb(77, 123, 156);
+    margin: 2%;
+  }
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2%;
+    background-color: rgb(77, 123, 156);
+    border-radius: 13px;
+    padding: 2%;
+    font-size: 20px;
+  }
+  .pending-btn {
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    background: #ff0000;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .pending-btn:hover {
+    text-decoration: none;
+  }
+
+  .click-btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .click-btn:hover {
+    text-decoration: none;
+  }
+  .accepted-btn {
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    background: #46b798;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .accepted-btn:hover {
+    text-decoration: none;
+  }
