@@ -55,14 +55,14 @@ header{
 }
 button{
     padding: 9px 25px;
-    background-color: rgb(77, 123, 156);
+    background-color: rgba(129, 181, 218, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 button:hover{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(129, 181, 218, 0.8);
 }
 .box-container {
     display: flex;
@@ -130,7 +130,7 @@ input {
 }
 .button2{
     padding: 9px 25px;
-    background-color: rgb(77, 123, 156);
+    background-color: #046CB5;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -143,7 +143,7 @@ input {
 }
 .button3{
     padding: 9px 25px;
-    background-color: rgb(77, 123, 156);
+    background-color: #046CB5;
     border: none;
     border-radius: 50px;
     cursor: pointer;

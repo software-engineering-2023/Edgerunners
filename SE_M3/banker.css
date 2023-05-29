@@ -1,18 +1,21 @@
-
 body{
     padding: 0;
     margin: 0;
-    background-color: #141625;
+    background-color: #f6f5f7;
+
     font-family: 'Overpass', sans-serif;
 }
 
 .signout{
-    color: #fff;
+
+    color: #f6f5f7;
+
 }
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #f6f5f7;
+
 }
 
 a:link { text-decoration: none; }
@@ -33,11 +36,18 @@ a:active { text-decoration: none; }
     justify-content: space-between;
     text-align: center;
     margin: 0 0 4% 0;
-    background-color: #1f213a;
+
+    background-color: #046CB5;
 }
 
 .bank-logo{
-    width: 80px;
+  cursor: pointer;
+  max-width: 200px;
+  max-height: 65px;
+  width: auto;
+  height: auto;
+  background-color: #046CB5;
+
 }
 
 .sidebar-btn{
@@ -48,7 +58,8 @@ a:active { text-decoration: none; }
     -webkit-border-radius: 13;
     -moz-border-radius: 13;
     border-radius: 18px;
-    background: #7c5df9;
+    background: #046CB5;
+
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     color: #fff;
@@ -128,7 +139,8 @@ a:active { text-decoration: none; }
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    color: #584ba5;
+    color: #ffffff;
+
     font-size: 1.5em;
     text-decoration: none;
   }
@@ -155,7 +167,8 @@ a:active { text-decoration: none; }
     justify-content: space-between;
     flex-direction: row;
     margin: 2%;
-    background-color: #1f213a;
+    background-color: #046CB5;
+
     border-radius: 13px;
     padding: 2%;
     font-size: 20px;
@@ -168,8 +181,9 @@ a:active { text-decoration: none; }
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #1f213a;
-    box-shadow: 2px 2px #7c5df9;
+    background-color: #046CB5;
+    box-shadow: 2px 2px #046CB5;
+
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -183,7 +197,8 @@ a:active { text-decoration: none; }
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #7c5df9;
+    color: #ffffff;
+
     display: block;
     transition: 0.3s;
   }
@@ -199,14 +214,16 @@ a:active { text-decoration: none; }
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #7c5df9;
+    background-color: #046CB5;
+
     color: white;
     padding: 10px 15px;
     border: none;
   }
   
   .openbtn:hover {
-    background-color: #1f213a;
+    background-color: rgb(4,108,181,0.8);
+
   }
   
   #main {
@@ -230,11 +247,12 @@ a:active { text-decoration: none; }
   }
 
   .modal-content {
-    background-color: #1f213a;
+    background-color: #034e83;
     border-radius: 8px;
     margin: auto;
     padding: 20px;
-    border: 1px solid #7c5df9;
+    border: 1px solid #046CB5;
+
     width: 80%;
   }
   
@@ -295,9 +313,58 @@ a:active { text-decoration: none; }
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    border: 2px solid #7c5df9;
+    border: 2px solid #046CB5;
     border-radius: 8px;
-    background-color: #584ba5;
+    background-color: #046CB5;
     color: white;
   }
+  .nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #81b5da;
+}
+.button3{
+  padding: 9px 25px;
+  background-color: rgba(129, 181, 218, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.button3:hover{
+  background-color: rgba(129, 181, 218, 0.8);
+}
+li, a, button{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #046CB5;
+  text-decoration: none;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #046CB5;
+}
+.logo{
+  cursor: pointer;
+  max-width: 200px;
+  max-height: 65px;
+  width: auto;
+  height: auto;
+  background-color: #046CB5;
+
+}
 
