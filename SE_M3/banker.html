@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Banker page</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="pics/circlelogo.png" type="image/icon type">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="banker.css">
+    <title>Banker</title>
+</head>
+<body>
+    <div class="navbar">
+        <img src="pics/circlelogo.png" alt="bank-logo" class="bank-logo">
+        <h2><a href="index.html" class="signout">Sign Out</a></h2>
+    </div>
+    <div class="requests-div">
+        <button class="btn" onmousedown="addAccounts()">Accounts</button>
+        <button class="btn" onmousedown="addCreditCards()">Credit Cards</button>
+        <button class="btn" onmousedown="addLoans()">Loans</button>
+    </div>
+    <div id="container">
+        
+    </div>
+    <script type="text/javascript" src="Banker.js"></script>
+</body>
 </html>

@@ -1,0 +1,154 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #141625;
+    font-family: 'Overpass', sans-serif;
+}
+
+.signout{
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+
+.navbar{
+    padding: 1% 4%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 0 4% 0;
+    background-color: #1f213a;
+}
+
+.bank-logo{
+    width: 80px;
+}
+
+.btn{
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 18px;
+    background: #7c5df9;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    height: 4rem;
+    width: 10rem;
+    margin-left: 3%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.request-div{
+    margin: 5%;
+    padding: 1% 4%;
+    display: flex;
+    justify-content: left;
+    gap: 10%;
+}
+
+.rejected-btn {
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    color: #ffffff;
+    background: #bf1b1b;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+  
+.rejected-btn:hover {
+    text-decoration: none;
+}
+
+.accepted-btn {
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    background: #46b798;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .accepted-btn:hover {
+    text-decoration: none;
+  }
+
+  .pending-btn {
+    -webkit-border-radius: 6;
+    -moz-border-radius: 6;
+    border-radius: 6px;
+    color: #ffffff;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    background: #a86d2f;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .pending-btn:hover {
+    text-decoration: none;
+  }
+
+  .click-btn {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #584ba5;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  
+  .click-btn:hover {
+    text-decoration: none;
+  }
+
+  #container{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 5%;
+  }
+
+  span{
+    color: #fff;
+    margin: 2%;
+  }
+
+  .content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 2%;
+    background-color: #1f213a;
+    border-radius: 13px;
+    padding: 2%;
+    font-size: 20px;
+  }
