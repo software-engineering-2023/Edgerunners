@@ -89,6 +89,7 @@ function addAccounts(){
             b1.innerText = '>';
             b1.setAttribute("id", "myBtn");
             b1.setAttribute("class", 'click-btn');
+            b1.setAttribute("onclick",'clientDetails()');
             di.setAttribute("class", "content");
             di.appendChild(s1);
             di.appendChild(s2);
@@ -124,6 +125,7 @@ function addCreditCards(){
             b1.innerText = '>';
             b1.setAttribute("id", "myBtn");
             b1.setAttribute("class", 'click-btn');
+            b1.setAttribute("onclick",'clientDetails()');
             di.setAttribute("class", "content");
             di.appendChild(s1);
             di.appendChild(s2);
@@ -160,6 +162,7 @@ function addLoans(){
             b1.innerText = '>';
             b1.setAttribute("id", "myBtn");
             b1.setAttribute("class", 'click-btn');
+            b1.setAttribute("onclick",'clientDetails()');
             di.setAttribute("class", "content");
             di.appendChild(s1);
             di.appendChild(s2);
@@ -183,6 +186,7 @@ function addClients(){
         b1.innerText = '>';
         b1.setAttribute("id", "myBtn");
         b1.setAttribute("class", 'click-btn');
+        b1.setAttribute("onclick",'clientDetails()');
         di.setAttribute("class", "content");
         di.appendChild(s1);
         di.appendChild(b1);
@@ -227,11 +231,8 @@ function change(e){
 
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
-
-document.addEventListener('click', (e) =>{
-    if(e.target.id == 'myBtn'){
-        modal.style.display = "block";
-    }
+function clientDetails(){
+    modal.style.display = "block";
     const name1 = randomName();
     const name2 = randomName();
     const names1 = name1.split(" ");
@@ -250,7 +251,30 @@ document.addEventListener('click', (e) =>{
     }
     document.getElementById("phone").value = phone;
     document.getElementById("address").value = "Gamb elWad Boody";
-});
+}
+// document.addEventListener('click', (e) =>{
+//     if(e.target.id == 'myBtn'){
+//         modal.style.display = "block";
+//     }
+//     const name1 = randomName();
+//     const name2 = randomName();
+//     const names1 = name1.split(" ");
+//     const names2 = name2.split(" ");
+//     document.getElementById("fname").value = names1[0];
+//     document.getElementById("mname").value = names1[1];
+//     document.getElementById("lname").value = names2[0];
+//     document.getElementById("email").value = names1[0]+names2[0]+Math.floor(Math.random() * 100)+"@gmail.com";
+//     const num = ["010 ", "011 ", "012 ", "015 "];
+//     let phone = num[Math.floor(Math.random() * 4)];
+//     for(let i = 0; i < 8; ++i){
+//         phone = phone.concat(Math.floor(Math.random() * 10));
+//         if(i > 1 && !(i%3) && i != 6){
+//             phone += " ";
+//         }
+//     }
+//     document.getElementById("phone").value = phone;
+//     document.getElementById("address").value = "Gamb elWad Boody";
+// });
 
 span.onclick = function() {
   modal.style.display = "none";
