@@ -56,7 +56,17 @@
             alert("invalid shit")
         }
         else{
-            banker.push({username:user,password:pass})
+            flag = true;
+            for(var i =0 ; i<banker.length;++i){
+                if(banker[i].username == user){
+                    alert("banker already exists");
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag){
+                banker.push({username:user,password:pass})
+            }
         }
         var bankers = ""
         for(var i = 0 ; i<banker.length ;++i){
