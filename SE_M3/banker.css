@@ -1,272 +1,21 @@
-<<<<<<< Updated upstream
-body{
-    padding: 0;
-    margin: 0;
-    background-color: #141625;
-    font-family: 'Overpass', sans-serif;
-}
-
-.signout{
-    color: #fff;
-}
-
-a{
-    text-decoration: none;
-    color: #fff;
-}
-
-a:link { text-decoration: none; }
-
-
-a:visited { text-decoration: none; }
-
-
-a:hover { text-decoration: none;}
-
-
-a:active { text-decoration: none; }
-
-
-.navbar{
-    padding: 1% 4%;
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin: 0 0 4% 0;
-    background-color: #1f213a;
-}
-
-.bank-logo{
-    width: 80px;
-}
-
-.sidebar-btn{
-  margin: -1rem 0 0 3rem;
-}
-
-.btn{
-    -webkit-border-radius: 13;
-    -moz-border-radius: 13;
-    border-radius: 18px;
-    background: #7c5df9;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    color: #fff;
-    height: 4rem;
-    width: 10rem;
-    margin-left: 3%;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.request-div{
-    height: 500px;
-    margin: 5%;
-    padding: 1% 4%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: left;
-    column-gap: 10px;
-}
-
-.rejected-btn {
-    -webkit-border-radius: 6;
-    -moz-border-radius: 6;
-    border-radius: 6px;
-    color: #ffffff;
-    background: #bf1b1b;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-}
-  
-.rejected-btn:hover {
-    text-decoration: none;
-}
-
-.accepted-btn {
-    -webkit-border-radius: 6;
-    -moz-border-radius: 6;
-    border-radius: 6px;
-    color: #ffffff;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 20px;
-    background: #46b798;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .accepted-btn:hover {
-    text-decoration: none;
-  }
-
-  .pending-btn {
-    -webkit-border-radius: 6;
-    -moz-border-radius: 6;
-    border-radius: 6px;
-    color: #ffffff;
-    margin-top: auto;
-    margin-bottom: auto;
-    font-size: 20px;
-    background: #a86d2f;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-  }
-  
-  .pending-btn:hover {
-    text-decoration: none;
-  }
-
-  .click-btn {
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-    color: #584ba5;
-    font-size: 1.5em;
-    text-decoration: none;
-  }
-  
-  .click-btn:hover {
-    text-decoration: none;
-  }
-
-  #container{
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin: 5%;
-  }
-
-  span{
-    color: #fff;
-    margin: 2%;
-  }
-
-  .content{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 2%;
-    background-color: #1f213a;
-    border-radius: 13px;
-    padding: 2%;
-    font-size: 20px;
-  }
-
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #1f213a;
-    box-shadow: 2px 2px #7c5df9;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #7c5df9;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #7c5df9;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #1f213a;
-  }
-  
-  #main {
-    transition: margin-left .5s;
-    
-  }
-  
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-  }
-
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-<<<<<<< Updated upstream
-  
-=======
-
 body{
     padding: 0;
     margin: 0;
     background-color: #f6f5f7;
+
     font-family: 'Overpass', sans-serif;
 }
 
 .signout{
+
     color: #f6f5f7;
+
 }
 
 a{
     text-decoration: none;
     color: #f6f5f7;
+
 }
 
 a:link { text-decoration: none; }
@@ -287,6 +36,7 @@ a:active { text-decoration: none; }
     justify-content: space-between;
     text-align: center;
     margin: 0 0 4% 0;
+
     background-color: #046CB5;
 }
 
@@ -297,6 +47,7 @@ a:active { text-decoration: none; }
   width: auto;
   height: auto;
   background-color: #046CB5;
+
 }
 
 .sidebar-btn{
@@ -308,6 +59,7 @@ a:active { text-decoration: none; }
     -moz-border-radius: 13;
     border-radius: 18px;
     background: #046CB5;
+
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     color: #fff;
@@ -388,6 +140,7 @@ a:active { text-decoration: none; }
     overflow: hidden;
     outline: none;
     color: #ffffff;
+
     font-size: 1.5em;
     text-decoration: none;
   }
@@ -415,6 +168,7 @@ a:active { text-decoration: none; }
     flex-direction: row;
     margin: 2%;
     background-color: #046CB5;
+
     border-radius: 13px;
     padding: 2%;
     font-size: 20px;
@@ -429,6 +183,7 @@ a:active { text-decoration: none; }
     left: 0;
     background-color: #046CB5;
     box-shadow: 2px 2px #046CB5;
+
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -443,6 +198,7 @@ a:active { text-decoration: none; }
     text-decoration: none;
     font-size: 20px;
     color: #ffffff;
+
     display: block;
     transition: 0.3s;
   }
@@ -459,6 +215,7 @@ a:active { text-decoration: none; }
     font-size: 20px;
     cursor: pointer;
     background-color: #046CB5;
+
     color: white;
     padding: 10px 15px;
     border: none;
@@ -466,6 +223,7 @@ a:active { text-decoration: none; }
   
   .openbtn:hover {
     background-color: rgb(4,108,181,0.8);
+
   }
   
   #main {
@@ -494,6 +252,7 @@ a:active { text-decoration: none; }
     margin: auto;
     padding: 20px;
     border: 1px solid #046CB5;
+
     width: 80%;
   }
   
@@ -608,104 +367,4 @@ header{
   background-color: #046CB5;
 
 }
->>>>>>> Stashed changes
-=======
 
-  .modal-description{
-    padding: 2rem;
-  }
-  
-  
-
-  .modal-description{
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    color: #fff;
-  }
-
-  #client-name{
-    margin: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #client-address{
-    margin: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  #client-contact{
-    margin: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  label, input{
-    display: block;
-  }
-
-  input[type=text] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #046CB5;
-    border-radius: 8px;
-    background-color: #046CB5;
-    color: white;
-  }
-  .nav_links{
-    list-style: none;
-}
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-.nav_links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.nav_links li a:hover{
-    color: #81b5da;
-}
-.button3{
-  padding: 9px 25px;
-  background-color: rgba(129, 181, 218, 1);
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
-.button3:hover{
-  background-color: rgba(129, 181, 218, 0.8);
-}
-li, a, button{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: #fff;
-  background-color: #046CB5;
-  text-decoration: none;
-}
-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 10%;
-  background-color: #046CB5;
-}
-.logo{
-  cursor: pointer;
-  max-width: 200px;
-  max-height: 65px;
-  width: auto;
-  height: auto;
-  background-color: #046CB5;
-
-}
->>>>>>> Stashed changes

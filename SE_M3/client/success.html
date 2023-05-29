@@ -9,12 +9,42 @@
     <link rel="stylesheet" href="transferMoney.css">
     <link rel="icon" href="../pics/circlelogo.png" type="image/icon type">
     <style type="text/css">
-        body {
-            background: #f2f2f2;
-        }
+     * {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+   
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+    height: 100vh;
+	margin: -20px 0 50px;
+  }
+  button:hover{
+    background-color: rgba(129, 181, 218, 0.8);
+}
+li, a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: #046CB5;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #046CB5;
+}
 
         .payment {
-            border: 1px solid #f2f2f2;
+            border: 1px solid ;
             height: 280px;
             border-radius: 20px;
             background: #fff;
@@ -74,9 +104,9 @@
         <img class="logo" src ="../pics/circlelogo.png" alt = "logo">
         <nav>
             <ul class="nav_links">
-                <li><a href="#">Home</a></li>
-                <li><a href="client.html">Back</a></li>
-                <!-- <li><a href="#">Forward</a></li> -->
+
+                <li><a href="client.html">Home</a></li>
+
                 <li><a href="profile.html">Profile</a></li>
             </ul>
         </nav>
