@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Page</title>
+  <link rel="stylesheet" href="report.css">
+  <link rel="icon" href="../pics/circlelogo.png" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src ="../pics/circlelogo.png" alt = "logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="client.html">Home</a></li>
+                <!-- <li><a href="#">Forward</a></li> -->
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <a class ="cta" href="../index.html"><button class = "logout">Log out</button></a>
+    </header>
+    <P id="users"></P>
+    <div class="accountform">
+    <form id = "issues" class="form loan-form flex flex-column" autocomplete="off">
+        <h3> Report System Issues</h3> 
+        <label for="name"></label>
+        <label for="text">Comments</label>
+        <input type="text" name="comments" id="comments">  
+             
+        <button class ="full" type="button" onclick="requestalert()">Submit</button>
+    </form>
+    <form class="form loan-form flex flex-column" autocomplete="off">
+        <h3> Report credit card issue</h3> 
+        <label for="name">State the problem</label>
+        <div id = "bill"><select name="name" id="name">
+            <option value="bill">Choose problem</option>
+            <option value="Gas">Theft</option>
+            <option value="Water">Damage</option>
+            <option value="Electricity">Loss</option>
+        </select>
+        <label id = "cost" for=""></label>
+    </div>   
+        <button class ="partial" type="button" onclick="requestalert2()" >Submit and apply for replacement</button>
+    </form>
+</div>
+<script src="report.js" charset="utf-8"></script>
+</body>
+</html>
