@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Styled Page</title>
+  <link rel="stylesheet" href="bills.css">
+  <link rel="icon" href="../pics/circlelogo.png" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src ="../pics/circlelogo.png" alt = "logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="client.html">Home</a></li>
+                <!-- <li><a href="#">Forward</a></li> -->
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        <a class ="cta" href="../index.html"><button class = "logout">Log out</button></a>
+    </header>
+    <P id="users"></P>
+    <div class="accountform">
+    <form class="form loan-form flex flex-column" autocomplete="off">
+        <h3> Credit Card Bill</h3> 
+        <label for="name">Full Bill: EGP 8927 </label>
+        <label for="text">Partial Bill</label>
+        <input type="text" name="partialBill" id="partialBill">       
+        <button class ="partial" type="button" onclick="requestalertpartial()">Pay Partial Bill</button>
+        <button class ="full" type="button" onclick="requestalertfull()">Pay Full Bill</button>
+    </form>
+    <form class="form loan-form flex flex-column" autocomplete="off">
+        <h3> Pay Bills</h3> 
+        <label for="name">Which bill would you like to pay?</label>
+        <div id = "bill"><select onclick="randombill()" name="name" id="name">
+            <option value="bill">Choose Bill</option>
+            <option value="Gas">Gas</option>
+            <option value="Water">Water</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Telephone">Telephone</option>
+        </select>
+        <label id = "cost" for=""></label>
+    </div>   
+        <button class ="partial" type="button" onclick="bill()">Pay Bill</button>
+    </form>
+</div>
+<script src="bills.js" charset="utf-8"></script>
+</body>
+</html>
