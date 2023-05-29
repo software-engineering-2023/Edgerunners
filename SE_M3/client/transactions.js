@@ -101,7 +101,7 @@ function randomAccounts(){
 
 
 function addBank(){
-    document.getElementById('LabelID').innerText="Back Account Transactions"
+    document.getElementById('LabelID').innerText="Bank Account Transactions"
     randomAccounts();
     const d = document.getElementById("container");
     d.innerHTML = "";
