@@ -58,7 +58,17 @@
     <br>
     <br>
     <div class="shot">
-        <a href="../index.html"><button class="button4">close account</button></a>
+        <button class="button4" onclick="deleteacc()">close account</button>
     </div>
 </body>
+<script>
+    function deleteacc() {
+        if (confirm("Are you sure you want to delete your account?")) {
+            window.location.replace('../index.html');
+        }
+        else{
+            window.location.replace('profile.html');
+        }
+    }
+</script>
 </html>
