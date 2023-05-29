@@ -13,6 +13,7 @@
             <ul class="nav_links">
                 <li><a href="admin.html">Home</a></li>
                 <li><a href="index.html">Back</a></li>
+                <li><a class = "navbar" href="#">Profile</a></li>
             </ul>
         </nav>
         <a class ="cta" href="../index.html"><button>Log out</button></a>
@@ -31,9 +32,9 @@ function randomDate(start, end) {
 function randomproblem(){
     let result = '';
     let num = Math.floor(Math.random() * 100000)
-    const problems = ['credit bill is due amount : '+num+' EGP','loan installment is due amount : '+num+' EGP',
-        'water bill is due amount : '+num+' EGP','electric bill is due amount : '+num+' EGP','gas bill is due amount : '+num+' EGP'
-        ,'telephone bill is due amount : '+num+' EGP','2 days from now Edgerunners Bank will be under maintenance for a 24 hours']
+    const problems = ['credit bill due amount : '+num+' EGP','loan installment due amount : '+num+' EGP',
+        'water bill due amount : '+num+' EGP','electric bill due amount : '+num+' EGP','gas bill due amount : '+num+' EGP'
+        ,'telephone bill due amount : '+num+' EGP','2 days from now Edgerunners Bank will be under maintenance for a 24 hours']
     let problemslength = problems.length
     result += problems[Math.floor(Math.random() * problemslength)];
     return result;
