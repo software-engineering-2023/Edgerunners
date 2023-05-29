@@ -86,6 +86,7 @@ function addAccounts(){
             b.innerText = 'Pending';
             var b1 = document.createElement('BUTTON');
             b1.innerText = '>';
+            b1.setAttribute("id", "myBtn");
             b1.setAttribute("class", 'click-btn');
             di.setAttribute("class", "content");
             di.appendChild(s1);
@@ -120,11 +121,13 @@ function addCreditCards(){
             b.innerText = 'Pending';
             var b1 = document.createElement('BUTTON');
             b1.innerText = '>';
+            b1.setAttribute("id", "myBtn");
             b1.setAttribute("class", 'click-btn');
             di.setAttribute("class", "content");
             di.appendChild(s1);
             di.appendChild(s2);
             di.appendChild(s3);
+            di.appendChild(s4);
             di.appendChild(b);
             di.appendChild(b1);
             d.append(di);
@@ -154,11 +157,13 @@ function addLoans(){
             b.innerText = 'Pending';
             var b1 = document.createElement('BUTTON');
             b1.innerText = '>';
+            b1.setAttribute("id", "myBtn");
             b1.setAttribute("class", 'click-btn');
             di.setAttribute("class", "content");
             di.appendChild(s1);
             di.appendChild(s2);
             di.appendChild(s3);
+            di.appendChild(s4);
             di.appendChild(b);
             di.appendChild(b1);
             d.append(di);
@@ -171,6 +176,16 @@ document.addEventListener('click', (e) =>{
         change(e);
     }
 });
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
 
 function change(e){
     if(e.target.className == 'pending-btn'){
@@ -189,4 +204,23 @@ function change(e){
         t.setAttribute("class", "pending-btn");
         t.innerHTML = 'Pending';
     }
+}
+
+var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("close")[0];
+
+document.addEventListener('click', (e) =>{
+    if(e.target.id == 'myBtn'){
+        modal.style.display = "block";
+    }
+});
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
