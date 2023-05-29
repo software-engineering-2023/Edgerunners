@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +20,7 @@
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <div class="request-div">
-            <a href="#" onmousedown="addClientDetails()">Client Details</a>
+            <a href="#" onmousedown="addClients()">Client Details</a>
             <a href="#" onmousedown="addAccounts()">Account Requests</a>
             <a href="#" onmousedown="addCreditCards()">Credit Card Requests</a>
             <a href="#" onmousedown="addLoans()">Loan Requests</a>
@@ -29,7 +30,39 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <div class="modal-description">
-                
+                <div id="client-name">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                    </div>
+                    <div>
+                        <label for="mname">Middle Name</label>
+                        <input type="text" id="mname" name="mname"><br><br>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                    </div>
+                </div>
+                <div id="client-contact">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email"><br><br>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone"><br><br>
+                    </div>
+                </div>
+                <div id="client-address">
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address"><br><br>
+                    </div>
+                </div>
+                <div id="client-transactions">
+                    
+                </div>
             </div>
         </div>
     </div>
@@ -42,4 +75,5 @@
     </div>
     <script type="text/javascript" src="Banker.js"></script>
 </body>
+
 </html>

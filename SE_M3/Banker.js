@@ -1,3 +1,4 @@
+
 let cntCreditCards = 0;
 let cntLoans = 0;
 let cntAccounts = 0;
@@ -15,8 +16,8 @@ function makeID(){
 function randomName(){
     let result = '';
     const names = ['Ahmed', 'Mohamed', 'Hazem', 'Mahmoud', 'Mazen', 'Ashraf', 'Ramzy', 'Abdo', 'Hamoda', 'Yasmeen', 'Khaled',
-             'Rasha', 'Sara', 'Heba', 'Mai', 'Malak', 'John', 'Hamada', 'Abd ElGawad', 'Metwaly', 'Abd ElMeguid', 'Ghaloum',
-            'Refaat', 'Marawan', 'Yahia'];
+             'Rasha', 'Sara', 'Heba', 'Mai', 'Malak', 'John', 'Hamada', 'Abd-ElGawad', 'Metwaly', 'Abd-ElMeguid', 'Ghaloum',
+            'Refaat', 'Marawan', 'Yahia', 'Raouf', 'Yukimura', 'Sanada', 'Boody', 'Seif', 'Marina', 'Nabil'];
     let charactersLength = names.length;
     result += names[Math.floor(Math.random() * charactersLength)] + " ";
     result += names[Math.floor(Math.random() * charactersLength)];
@@ -34,7 +35,7 @@ function randomAmount(){
 var creditCards = new Array(20);
 var loans = new Array(20);
 var accounts = new Array(20);
-
+var clients = new Array(20);
 
 function randomCreditCards(){
     for(let i = 0; i < 20; ++i){
@@ -171,6 +172,24 @@ function addLoans(){
     }
 }
 
+function addClients(){
+    const d = document.getElementById("container");
+    d.innerHTML = "";
+    for(let i = 0; i < 10; ++i){
+        var di = document.createElement('div');
+        var s1 = document.createElement('SPAN');
+        s1.innerHTML = randomName();
+        var b1 = document.createElement('BUTTON');
+        b1.innerText = '>';
+        b1.setAttribute("id", "myBtn");
+        b1.setAttribute("class", 'click-btn');
+        di.setAttribute("class", "content");
+        di.appendChild(s1);
+        di.appendChild(b1);
+        d.append(di);
+    }
+}
+
 document.addEventListener('click', (e) =>{
     if(e.target.className == 'pending-btn' || e.target.className == 'rejected-btn' || e.target.className == 'accepted-btn'){
         change(e);
@@ -213,6 +232,24 @@ document.addEventListener('click', (e) =>{
     if(e.target.id == 'myBtn'){
         modal.style.display = "block";
     }
+    const name1 = randomName();
+    const name2 = randomName();
+    const names1 = name1.split(" ");
+    const names2 = name2.split(" ");
+    document.getElementById("fname").value = names1[0];
+    document.getElementById("mname").value = names1[1];
+    document.getElementById("lname").value = names2[0];
+    document.getElementById("email").value = names1[0]+names2[0]+Math.floor(Math.random() * 100)+"@gmail.com";
+    const num = ["010 ", "011 ", "012 ", "015 "];
+    let phone = num[Math.floor(Math.random() * 4)];
+    for(let i = 0; i < 8; ++i){
+        phone = phone.concat(Math.floor(Math.random() * 10));
+        if(i > 1 && !(i%3) && i != 6){
+            phone += " ";
+        }
+    }
+    document.getElementById("phone").value = phone;
+    document.getElementById("address").value = "Gamb elWad Boody";
 });
 
 span.onclick = function() {
@@ -224,3 +261,4 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
