@@ -15,9 +15,9 @@
 	margin: -20px 0 50px;
   }
 
-li, a, button{
+li, .navbar, button{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     color: #fff;
     background-color: #046CB5;
@@ -88,3 +88,29 @@ button:hover{
     font-weight: bold;
     color: #fff;
 }
+.boxes{
+    text-decoration: none;
+}
+.bellButton{
+    cursor: pointer;
+    max-width: 50px;
+    max-height: 50px;
+    width: auto;
+    height: auto;
+    background-color: #046CB5;
+}
+.box2 {
+    width: 60px;
+    height: 60px;
+    background-color: #046CB5;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+

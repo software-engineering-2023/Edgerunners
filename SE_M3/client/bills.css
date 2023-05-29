@@ -8,14 +8,12 @@
 
   body {
     font-family: 'Montserrat', sans-serif;
-    justify-content: center;
-    align-items: center;
 	flex-direction: column;
     height: 100vh;
 	margin: -20px 0 50px;
   }
 
-li, a, button{
+li, a, .logout{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -53,7 +51,7 @@ header{
 .nav_links li a:hover{
     color: #81b5da;
 }
-button{
+.logout{
     padding: 9px 25px;
     background-color: rgba(129, 181, 218, 1);
     border: none;
@@ -64,37 +62,14 @@ button{
 button:hover{
     background-color: rgba(129, 181, 218, 0.8);
 }
-.box-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    
-    margin-top: 20px;
-}
 
-.box {
-    width: 160px;
-    height: 160px;
-    background-color: #046CB5;
-    border: none;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-}
 .form {
-    max-width: 595px;
+    max-width: 300px;
     width: 100%;
     color: #fff;
     padding: 2rem;
     background: #046CB5;
-    margin: 0 auto;
+    margin: 0 20px;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
@@ -107,10 +82,11 @@ button:hover{
     position: relative;
     align-items: center;
     justify-content: center;
+    display: flex;
     top: 20px;
  } 
   .form h3 {
-    font-size: 3rem;
+    font-size: 1rem;
     background-color: #046CB5;
   }
   
@@ -142,12 +118,13 @@ button:hover{
  
   .form button {
     padding: 0.5rem 2rem;
+    width: 200px;
     margin-top: 2rem;
     border-radius: 0.5rem;
     border: none;
     outline: none;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 13px;
+    font-weight: 600;
     text-transform: uppercase;
     color: #046CB5;
     background-color: #fff;
@@ -160,4 +137,32 @@ button:hover{
   
   .form-main {
     padding: 10rem 2rem;
+  }
+  .partial{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: #046CB5;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(129, 181, 218, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  .full{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: #046CB5;
+    text-decoration: none;
+    padding: 9px 25px;
+    background-color: rgba(129, 181, 218, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
   }

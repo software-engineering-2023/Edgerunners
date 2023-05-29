@@ -14,8 +14,11 @@
     height: 100vh;
 	margin: -20px 0 50px;
   }
-
-li, a, button{
+.big{
+    justify-content: center;
+    text-align: center;
+}
+li, a{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -30,6 +33,31 @@ header{
     padding: 30px 10%;
     background-color: #046CB5;
 }
+
+.btn{
+    -webkit-border-radius: 13;
+    -moz-border-radius: 13;
+    border-radius: 18px;
+    background: #046CB5;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    height: 5rem;
+    width: 13rem;
+    margin-left: 3%;
+    font-size: 20px;
+    cursor: pointer;
+    justify-content: center;
+}
+.request-div{
+    margin: 5%;
+    padding: 1% 4%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10%;
+}
+
 .logo{
     cursor: pointer;
     max-width: 200px;
@@ -55,7 +83,7 @@ header{
 }
 button{
     padding: 9px 25px;
-    background-color: rgb(77, 123, 156);
+    background-color: rgba(129, 181, 218, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -97,7 +125,9 @@ button:hover{
     justify-content: center;
     text-align: center;
   }
-  .bankers {background-color: #046CB5;}
+.bankers {
+    background-color: #046CB5;
+}
 .b{
     background-color: #f6f5f7;
 	border-radius: 10px;

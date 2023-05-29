@@ -36,7 +36,9 @@
 // });
 const admin = [{username:"admin",password:"admin"}]
 var client = [{username:"client",password:"client",NID:"0",Phone:"0",fullname:"client"}]
-var banker = [{username:"banker",password:"banker"}]
+
+var banker = [{username:"banker1",password:"banker1"},{username:"banker2",password:"banker2"},{username:"banker3",password:"banker3"}]
+
 const pages = {
     adminpage: 'admin.html',
     clientpage: 'client/client.html',
@@ -73,18 +75,24 @@ function signup(){
     const nid = document.getElementById('nationalid').value
     const phone = document.getElementById('phone').value
     const fullnamereg = document.getElementById('fullname').value
-    for(var i = 0 ; i<client.length ; ++i){
-        if(namereg==client[i].username){
-            alert("Username already exists");
-            break;
-        }
-        else if(nid==client[i].NID){
-            alert("National ID already exists");
-            break;
-        }
-        else{
-            client.push({username:namereg,password:passreg,NID:nid,Phone:phone,fullname:fullnamereg})
-            alert("user registered successfully!")
+    if(namereg=="" || passreg=="" || nid=="" || phone=="" || fullnamereg==""){
+        alert("Invalid inputs!")
+    }
+    else{
+        for(var i = 0 ; i<client.length ; ++i){
+            if(namereg==client[i].username){
+                alert("Username already exists");
+                break;
+            }
+            else if(nid==client[i].NID){
+                alert("National ID already exists");
+                break;
+            }
+            else{
+                client.push({username:namereg,password:passreg,NID:nid,Phone:phone,fullname:fullnamereg})
+                alert("user registered successfully!")
+                break;
+            }
         }
     }
 }

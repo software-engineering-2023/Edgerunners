@@ -1,106 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Admin Page</title>
-  <link rel="stylesheet" href="admin.css">
-  <link rel="icon" href="pics/circlelogo.png" type="image/icon type">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <a href="#"><img class="logo" src ="pics/circlelogo.png" alt = "logo"></a>
-        <nav>
-            <ul class="nav_links">
-                <li><a href="admin.html">Home</a></li>
-                <li><a href="index.html">Back</a></li>
-            </ul>
-        </nav>
-        <a class ="cta" href="index.html"><button>Log out</button></a>
-    </header>
-    <div class="b">
-        <br>
-        <span class="label bankers">Bankers in the system</span>
-        <br>
-        <br>
-        <p id="pid"></p>
-        <input class="input" type="text" id="username" placeholder="username" />
-        <input class="input" type="text" id="pass" placeholder="password" /> 
-        <div class="shot">
-        <button class="button2" onclick="addbanker()">add bankers</button>
-        <button class="button2" onclick="deletebanker()">delete bankers</button>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="shot">
-        <button class="button3" onmousedown="addreports()">view reports</button>
-    </div>
-    <div id="container">
 
-    </div>
-</body>
-<script src="main.js"></script>
-<script>
-    var bankers = ""
-    for(var i = 0 ; i<banker.length ;++i){
-        bankers += (i+1)+") "+banker[i].username + "<br>"
-    }
-    document.getElementById("pid").innerHTML = bankers;
-    function addbanker(){
-        const user = document.getElementById('username').value
-        const pass = document.getElementById('pass').value
-        if(user==""||pass==""){
-            alert("invalid shit")
-        }
-        else{
-            banker.push({username:user,password:pass})
-        }
-        var bankers = ""
-        for(var i = 0 ; i<banker.length ;++i){
-            bankers += (i+1)+") "+banker[i].username + "<br>"
-        }
-        document.getElementById("pid").innerHTML = bankers;
-    }
-    function deletebanker(){
-        const user = document.getElementById('username').value
-        const pass = document.getElementById('pass').value
-        let flag = false
-        if(user==""){
-            alert("invalid shit")
-            return
-        }
-        else{
-            flag = true
-        }
-        // console.log(flag)
-        let del = -1
-        for(var j=0 ;j<banker.length;++j){
-            console.log(j+" "+del)
-            if(banker[j].username == user){
-                del = j;
-                console.log("found")
-                break;
-            }    
-        }
-        if(del!=-1){
-            banker.splice(del,1)
-        }
-        else{
-            alert("Banker not found")
-        }
-        var bankers = ""
-        for(var i = 0 ; i<banker.length ;++i){
-            bankers += (i+1)+") "+banker[i].username + "<br>"
-        }
-        if(bankers==""){
-            bankers = "damn we have no bankers"
-        }
-        document.getElementById("pid").innerHTML = bankers;
-    }
 
 function makeID(){
     let result = '#';
@@ -122,7 +20,22 @@ function randomName(){
     result += names[Math.floor(Math.random() * charactersLength)];
     return result;
 }
-
+function randomTransaction(){
+    let result = '';
+    const shops = ['Zara', 'TBS', 'Pizza Hut', 'starbucks', 'KFC', 'Mac', 'Tommy Hilfiger', 'GUC', 'عم سعد', 'Sultan', 'Dolato',
+             'Pronto', 'Arabiata', 'American Eagle', 'السراج', 'Bershka', 'Adidas', 'Nike', 'Michael Jordan'];
+    let charactersLength = shops.length;
+    result += shops[Math.floor(Math.random() * charactersLength)] + " ";
+    return result;
+}
+function randomMoney(){
+    let result = '';
+    const problems = [Math.floor(Math.random() * 1000) , Math.floor(Math.random() * 100), Math.floor(Math.random() * 10000)];
+    let problemslength = problems.length;
+    result += problems[Math.floor(Math.random() * problemslength)];
+    result += " EGP";
+    return result;
+}
 function randomDate(start, end) {
     return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime())).toISOString().slice(0,10);
 }
@@ -144,14 +57,40 @@ var reports = new Array(20);
 function randomAccounts(){    
     for(let i = 0; i < 20; ++i){
         reports[i] = [];
-        let data = [makeID(), randomDate(new Date(2012, 0, 1), new Date()), randomName(),randomproblem(), 'Pending'];
+        let data = [makeID(), randomDate(new Date(2012, 0, 1), new Date()), randomTransaction(),randomMoney()];
         for(let j = 0; j < 5; ++j){
             reports[i][j] = data[j];
         }
     }
 }
 
-function addreports(){
+function addBank(){
+    randomAccounts();
+    const d = document.getElementById("container");
+    d.innerHTML = "";
+    for(let i = 0; i < 10; ++i){
+        var di = document.createElement('div');
+        var s1 = document.createElement('SPAN');
+        s1.innerHTML = reports[i][0];
+        var s2 = document.createElement('SPAN');
+        s2.innerHTML = reports[i][1];
+        var s3 = document.createElement('SPAN');
+        s3.innerHTML = reports[i][2];
+        var s4 = document.createElement('SPAN');
+        s4.innerHTML = reports[i][3];
+        var b1 = document.createElement('BUTTON');
+        b1.innerText = '>';
+        b1.setAttribute("class", 'click-btn');
+        di.setAttribute("class", "content");
+        di.appendChild(s1);
+        di.appendChild(s2);
+        di.appendChild(s3);
+        di.appendChild(s4);
+        di.appendChild(b1);
+        d.append(di);        
+    }
+}
+function addCreditCard(){
     randomAccounts();
     const d = document.getElementById("container");
     d.innerHTML = "";
@@ -203,5 +142,3 @@ function change(e){
         t.innerHTML = 'unhandled';
     }
 }
-</script>
-</html>
