@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="transactions.css">
+  <link rel="icon" href="../pics/circlelogo.png" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src ="../pics/circlelogo.png" alt = "logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="client.html">Home</a></li>
+
+                <!-- <li><a href="#">Forward</a></li> -->
+                <li><a  href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+        <a class ="cta" href="../index.html"><button>Log out</button></a>
+    </header>
+    <br>
+    <br>
+    <div class="big">
+        <div class="requests-div">
+            <button class="btn" onmousedown="addBank()">Bank account</button>
+            <button class="btn" onmousedown="addCreditCard()">Credit Card</button>
+        </div>
+        <h1 id="LabelID" style="background-color: #046CB5; color: white;margin-top: 60px;"> </h1>
+        
+        <div id="container">
+            
+        </div>
+    </div>
+    
+    
+</body>
+<script src="transactions.js" charset="utf-8"></script>
+</html>
