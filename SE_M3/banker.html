@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +7,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="pics/circlelogo.png" type="image/icon type">
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="pics/circlelogo.png">
     <link rel="stylesheet" href="banker.css">
     <title>Banker</title>
 </head>
-<body>
+<body  id="main">
     <div class="navbar">
         <img src="pics/circlelogo.png" alt="bank-logo" class="bank-logo">
         <h2><a href="index.html" class="signout">Sign Out</a></h2>
     </div>
-    <div class="requests-div">
-        <button class="btn" onmousedown="addAccounts()">Accounts</button>
-        <button class="btn" onmousedown="addCreditCards()">Credit Cards</button>
-        <button class="btn" onmousedown="addLoans()">Loans</button>
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <div class="request-div">
+            <a href="#" onmousedown="addClients()">Client Details</a>
+            <a href="#" onmousedown="addAccounts()">Account Requests</a>
+            <a href="#" onmousedown="addCreditCards()">Credit Card Requests</a>
+            <a href="#" onmousedown="addLoans()">Loan Requests</a>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-description">
+                <div id="client-name">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                    </div>
+                    <div>
+                        <label for="mname">Middle Name</label>
+                        <input type="text" id="mname" name="mname"><br><br>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                    </div>
+                </div>
+                <div id="client-contact">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email"><br><br>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" name="phone"><br><br>
+                    </div>
+                </div>
+                <div id="client-address">
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address"><br><br>
+                    </div>
+                </div>
+                <div id="client-transactions">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-btn">
+        <button class="openbtn" onclick="openNav()">☰ View Details</button>
     </div>
     <div id="container">
         
     </div>
     <script type="text/javascript" src="Banker.js"></script>
 </body>
+
 </html>
