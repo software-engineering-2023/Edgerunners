@@ -1,0 +1,101 @@
+/* Import Font Dancing Script */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    background-color: #f6f5f7;
+  }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+    height: 100vh;
+	margin: -20px 0 50px;
+  }
+
+li, .navbar, button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: #046CB5;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #046CB5;
+}
+.logo{
+    cursor: pointer;
+    max-width: 200px;
+    max-height: 65px;
+    width: auto;
+    height: auto;
+    background-color: #046CB5;
+
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #81b5da;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(129, 181, 218, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(129, 181, 218, 0.8);
+}
+
+.main {
+    margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 28px;
+    padding: 0 10px;
+    width: 58%;
+}
+
+.main h2 {
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main .card {
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 1px 1px 8px 0 grey;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
